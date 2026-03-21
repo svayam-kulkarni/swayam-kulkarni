@@ -3,80 +3,308 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Svayam Kulkarni — BBA student at IIM Bangalore. Artist, entrepreneur, and aspiring luxury professional.">
   <title>Svayam Kulkarni</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      color: #333;
-    }
-    h1 { font-size: 2rem; margin-bottom: 4px; }
-    h2 { font-size: 1.2rem; border-bottom: 1px solid #ccc; padding-bottom: 6px; margin-top: 30px; }
-    p, li { line-height: 1.6; }
-    ul { padding-left: 20px; }
-    a { color: #0066cc; }
-    .subtitle { color: #666; margin-bottom: 20px; }
-    .section { margin-bottom: 24px; }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Svayam Kulkarni</h1>
-  <p class="subtitle">BBA Student, IIM Bangalore &nbsp;|&nbsp; Karnataka, India</p>
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="#" class="nav-logo" aria-label="Svayam Kulkarni — Home">SK</a>
 
-  <div class="section">
-    <h2>About</h2>
-    <p>
-      I am a BBA student at the Indian Institute of Management Bangalore, pursuing a degree in Digital Business and Entrepreneurship. I have a background in art and entrepreneurship, and I am interested in luxury management, hospitality, and building meaningful ventures.
-    </p>
-  </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-  <div class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Indian Institute of Management Bangalore</strong> — BBA in Digital Business &amp; Entrepreneurship (2025 – Present)</li>
-      <li><strong>International Baccalaureate Diploma Programme</strong> — Completed 2025</li>
-      <li><strong>Sri Kumaran Group of Institutions</strong> — Grade 1 to Grade 10</li>
-    </ul>
-  </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
 
-  <div class="section">
-    <h2>Experience &amp; Projects</h2>
-    <ul>
-      <li>
-        <strong>Independent Art Venture</strong> — Founded and managed an online art business for ~2.5 years. Generated approximately ₹1,00,000 in revenue through direct-to-consumer sales.
-      </li>
-      <li>
-        <strong>The Masks We Wear</strong> — IB Visual Arts exhibition exploring identity, perception, and societal roles. Drew inspiration from literature, film, and mythology.
-      </li>
-      <li>
-        <strong>Phenytoin Research Study</strong> — Independent research on pharmacological applications of Phenytoin (2023, 4 months).
-      </li>
-      <li>
-        <strong>EV Industry Extended Essay</strong> — IB Extended Essay analyzing strategic shifts in the electric vehicle industry.
-      </li>
-    </ul>
-  </div>
+  <main>
 
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>Business: Market analysis, entrepreneurship, critical thinking</li>
-      <li>Creative: Visual storytelling, branding, design aesthetics</li>
-      <li>Research: Analytical writing, scientific and business research</li>
-      <li>Languages: English (fluent), Hindi (proficient), Kannada (proficient)</li>
-    </ul>
-  </div>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="hero-overline reveal">BBA &nbsp;·&nbsp; IIM Bangalore &nbsp;·&nbsp; Class of 2028</p>
+        <h1 class="hero-name reveal">
+          <span class="name-first">Svayam</span>
+          <span class="name-last">Kulkarni</span>
+        </h1>
+        <p class="hero-tagline reveal">Artist turned entrepreneur,<br>now studying business at IIM Bangalore.</p>
+        <div class="hero-actions reveal">
+          <a href="#work" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: <a href="mailto:svayam.gk@gmail.com">svayam.gk@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/svayamkulkarni/" target="_blank">svayamkulkarni</a></li>
-    </ul>
-  </div>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <span class="section-kicker reveal">About</span>
+        <div class="about-grid">
+          <div class="about-copy">
+            <h2 class="section-title reveal">Bridging creativity<br>and commerce</h2>
+            <div class="about-text reveal">
+              <p>I'm a business student at IIM Bangalore with a background that doesn't fit neatly into one box. I built and ran an art business for over two years, exhibited original work exploring identity and perception, and have spent years thinking about what makes luxury feel like luxury.</p>
+              <p>My ambition is to work at the intersection of premium consumer experience, creative strategy, and entrepreneurship — building things that leave a mark.</p>
+            </div>
+          </div>
+          <div class="about-stats reveal">
+            <div class="stat">
+              <span class="stat-num">₹1L</span>
+              <span class="stat-label">Revenue — independent art venture</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2.5<span class="stat-unit">yr</span></span>
+              <span class="stat-label">Running a D2C art business</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">IIM</span>
+              <span class="stat-label">Bangalore, DBE Programme</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- EDUCATION -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <span class="section-kicker reveal">Education</span>
+        <h2 class="section-title reveal">Academic path</h2>
+        <ol class="edu-list">
+          <li class="edu-item reveal">
+            <div class="edu-index">01</div>
+            <div class="edu-content">
+              <div class="edu-period">2025 – Present</div>
+              <h3>Indian Institute of Management Bangalore</h3>
+              <p class="edu-degree">BBA in Digital Business &amp; Entrepreneurship</p>
+              <p class="edu-note">One of India's most rigorous management institutions. Programme focuses on entrepreneurship, digital strategy, and real-world business fundamentals.</p>
+            </div>
+          </li>
+          <li class="edu-item reveal">
+            <div class="edu-index">02</div>
+            <div class="edu-content">
+              <div class="edu-period">Completed 2025</div>
+              <h3>International Baccalaureate Diploma</h3>
+              <p class="edu-degree">IBDP — Extended Essay in Business Strategy (EV industry)</p>
+              <p class="edu-note">Rigorous two-year pre-university qualification. Extended Essay analyzed strategic shifts in the electric vehicle sector using business analysis frameworks.</p>
+            </div>
+          </li>
+          <li class="edu-item reveal">
+            <div class="edu-index">03</div>
+            <div class="edu-content">
+              <div class="edu-period">— 2023</div>
+              <h3>Sri Kumaran Group of Institutions</h3>
+              <p class="edu-degree">Grade 1 – Grade 10, Bangalore</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="container">
+        <span class="section-kicker reveal">Work &amp; Projects</span>
+        <h2 class="section-title reveal">Things I've built<br>and explored</h2>
+        <div class="work-grid">
+
+          <article class="work-card reveal" data-delay="0">
+            <div class="work-header">
+              <span class="work-num">01</span>
+              <div class="work-tags">
+                <span>Entrepreneurship</span>
+                <span>Art</span>
+                <span>D2C</span>
+              </div>
+            </div>
+            <h3 class="work-title">Independent Art Venture</h3>
+            <p class="work-desc">Founded and ran an online art business for ~2.5 years, selling original work directly to buyers. Generated ₹1,00,000 in revenue. Built real fluency in pricing strategy, customer psychology, and brand positioning — before studying any of it formally.</p>
+            <div class="work-details">
+              <span>~2.5 Years</span>
+              <span>₹1,00,000 revenue</span>
+            </div>
+            <p class="work-footnote">Discontinued after honest reflection on long-term viability. The lessons outlasted the business.</p>
+          </article>
+
+          <article class="work-card reveal" data-delay="1">
+            <div class="work-header">
+              <span class="work-num">02</span>
+              <div class="work-tags">
+                <span>Visual Art</span>
+                <span>Exhibition</span>
+              </div>
+            </div>
+            <h3 class="work-title">The Masks We Wear</h3>
+            <p class="work-desc">IB Visual Arts exhibition — a cohesive body of work exploring identity, perception, and the roles we perform for the world. Drew from literature, film, and mythology. Demonstrated the kind of conceptual depth that doesn't usually emerge from someone who recently picked up a brush.</p>
+            <div class="work-details">
+              <span>2024–25</span>
+              <span>IB Exhibition</span>
+            </div>
+          </article>
+
+          <article class="work-card reveal" data-delay="2">
+            <div class="work-header">
+              <span class="work-num">03</span>
+              <div class="work-tags">
+                <span>Research</span>
+                <span>Science</span>
+              </div>
+            </div>
+            <h3 class="work-title">Phenytoin Research Study</h3>
+            <p class="work-desc">Independent 4-month research project on phenytoin, examining pharmacological applications and effects. Strengthened the ability to work through dense technical material and translate findings clearly — an unusual detour for a business student that speaks to intellectual range.</p>
+            <div class="work-details">
+              <span>2023</span>
+              <span>4 months</span>
+            </div>
+          </article>
+
+          <article class="work-card reveal" data-delay="3">
+            <div class="work-header">
+              <span class="work-num">04</span>
+              <div class="work-tags">
+                <span>Business</span>
+                <span>Strategy</span>
+              </div>
+            </div>
+            <h3 class="work-title">EV Industry Extended Essay</h3>
+            <p class="work-desc">IB Extended Essay analyzing strategic pivots in the electric vehicle industry. Applied business analysis frameworks to evaluate long-term implications of market and policy shifts — the kind of work that goes deeper than what you're required to submit.</p>
+            <div class="work-details">
+              <span>2024</span>
+              <span>IB Extended Essay</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <span class="section-kicker reveal">Skills</span>
+        <h2 class="section-title reveal">What I bring</h2>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h4>Strategy &amp; Business</h4>
+            <ul>
+              <li>Market analysis</li>
+              <li>Entrepreneurship</li>
+              <li>Critical thinking</li>
+              <li>Brand positioning</li>
+              <li>Customer psychology</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h4>Creative</h4>
+            <ul>
+              <li>Visual storytelling</li>
+              <li>Branding &amp; aesthetics</li>
+              <li>Design thinking</li>
+              <li>Art &amp; illustration</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h4>Research &amp; Analysis</h4>
+            <ul>
+              <li>Analytical writing</li>
+              <li>Scientific research</li>
+              <li>Business research</li>
+              <li>Data interpretation</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h4>Languages</h4>
+            <ul>
+              <li>English — Fluent</li>
+              <li>Hindi — Proficient</li>
+              <li>Kannada — Proficient</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERESTS TICKER -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker-inner">
+        <span>Luxury Brands</span><span class="sep">·</span>
+        <span>Hospitality</span><span class="sep">·</span>
+        <span>Automotive</span><span class="sep">·</span>
+        <span>Art &amp; Design</span><span class="sep">·</span>
+        <span>Entrepreneurship</span><span class="sep">·</span>
+        <span>Music Curation</span><span class="sep">·</span>
+        <span>Fitness</span><span class="sep">·</span>
+        <span>Luxury Brands</span><span class="sep">·</span>
+        <span>Hospitality</span><span class="sep">·</span>
+        <span>Automotive</span><span class="sep">·</span>
+        <span>Art &amp; Design</span><span class="sep">·</span>
+        <span>Entrepreneurship</span><span class="sep">·</span>
+        <span>Music Curation</span><span class="sep">·</span>
+        <span>Fitness</span><span class="sep">·</span>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <span class="section-kicker reveal">Contact</span>
+        <div class="contact-inner reveal">
+          <h2 class="contact-heading">Let's talk.</h2>
+          <p class="contact-sub">Open to conversations about luxury, entrepreneurship, creative projects, or anything worth discussing.</p>
+          <ul class="contact-list" role="list">
+            <li>
+              <a href="mailto:svayam.gk@gmail.com" class="contact-item">
+                <span class="contact-item-type">Email</span>
+                <span class="contact-item-val">svayam.gk@gmail.com</span>
+                <span class="contact-arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/svayamkulkarni/" class="contact-item" target="_blank" rel="noopener noreferrer">
+                <span class="contact-item-type">LinkedIn</span>
+                <span class="contact-item-val">svayamkulkarni</span>
+                <span class="contact-arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li>
+              <div class="contact-item">
+                <span class="contact-item-type">Location</span>
+                <span class="contact-item-val">Karnataka, India</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-copy">© 2025 Svayam Kulkarni</span>
+      <span class="footer-school">IIM Bangalore</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
