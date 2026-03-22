@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="luxury">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
   <title>Svayam Kulkarni</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600&family=Syne:wght@400;600;700;800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,6 +24,25 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <div class="theme-switcher" role="group" aria-label="Choose theme">
+        <button class="theme-btn" data-theme-val="luxury" aria-label="Luxury Editorial" aria-pressed="true">
+          <span class="theme-swatch" data-swatch="luxury"></span>
+          <span class="theme-label">Luxury</span>
+        </button>
+        <button class="theme-btn" data-theme-val="gallery" aria-label="Dark Gallery" aria-pressed="false">
+          <span class="theme-swatch" data-swatch="gallery"></span>
+          <span class="theme-label">Gallery</span>
+        </button>
+        <button class="theme-btn" data-theme-val="minimal" aria-label="Sharp Minimal" aria-pressed="false">
+          <span class="theme-swatch" data-swatch="minimal"></span>
+          <span class="theme-label">Minimal</span>
+        </button>
+        <button class="theme-btn" data-theme-val="warm" aria-label="Warm Creative" aria-pressed="false">
+          <span class="theme-swatch" data-swatch="warm"></span>
+          <span class="theme-label">Warm</span>
+        </button>
+      </div>
 
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>

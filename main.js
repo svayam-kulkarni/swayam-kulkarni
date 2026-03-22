@@ -7,6 +7,28 @@
   'use strict';
 
   // ──────────────────────────────────────────────────────────
+  // THEME SWITCHING
+  // ──────────────────────────────────────────────────────────
+  const THEME_KEY  = 'sk-theme';
+  const html       = document.documentElement;
+  const themeBtns  = document.querySelectorAll('.theme-btn');
+
+  function applyTheme(theme) {
+    html.setAttribute('data-theme', theme);
+    themeBtns.forEach(btn => {
+      btn.setAttribute('aria-pressed', btn.dataset.themeVal === theme ? 'true' : 'false');
+    });
+    localStorage.setItem(THEME_KEY, theme);
+  }
+
+  const saved = localStorage.getItem(THEME_KEY);
+  if (saved) applyTheme(saved);
+
+  themeBtns.forEach(btn => {
+    btn.addEventListener('click', () => applyTheme(btn.dataset.themeVal));
+  });
+
+  // ──────────────────────────────────────────────────────────
   // SCROLL REVEAL
   // ──────────────────────────────────────────────────────────
   const observer = new IntersectionObserver(
